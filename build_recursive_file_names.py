@@ -13,7 +13,6 @@ def select_files(root, files, extensions=[]):
         full_path = join(root, file)
         ext = splitext(file)[1]
 
-        if ext in extensions:
             selected_files.append(full_path)
 
     return selected_files
@@ -29,3 +28,5 @@ def build_recursive_dir_tree(path, ext=[]):
 
     return selected_files
     
+list = build_recursive_dir_tree('c:\\temp')
+print (list)
