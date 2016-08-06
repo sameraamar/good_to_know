@@ -29,5 +29,6 @@ def build_recursive_dir_tree(path, ext=[]):
 
     return selected_files
     
+#%%
 list = build_recursive_dir_tree('c:\\temp')
 print (list)
